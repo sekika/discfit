@@ -9,7 +9,7 @@ Discfit reads disc permeameter data in the field and calculates hydraulic parame
 
  K(h) = Ks exp(αh)
 
-where K is unsaturated hydraulic conductivity (cm/s), h is suction head (cm), Ks is saturated hydraulic conductivity (cm/s), α is a constant (/cm). Based on this equation, the linear relationship ln(q) = ln(qs) + αh is used for estimating qs (cm/s), the infiltration rate at the saturated condition, and α constant, as we have multiple point of (h, q) data from the disc permeameter. The hydraulic conductivity is calculated from the infiltration rate based on steady-state analysis of Wooding (1968);
+where K is unsaturated hydraulic conductivity (cm/s), h is matric head (cm), Ks is saturated hydraulic conductivity (cm/s), α is a constant (/cm). Note that h is negative and αh is negative. Based on this equation, the linear relationship ln(q) = ln(qs) + αh is used for estimating qs (cm/s), the infiltration rate at the saturated condition, and α constant, as we have multiple point of (h, q) data from the disc permeameter. The hydraulic conductivity is calculated from the infiltration rate based on steady-state analysis of Wooding (1968);
 
  q = K(1 + 4 / παr)
 
@@ -40,7 +40,7 @@ where
 Format of data file
 ---------------
 
-It is a csv file with time, water level, and suction head as follows.
+It is a csv file with time, water level, and suction head (absolute value of the matric head) as follows.
 
 .. code-block:: csv
 
