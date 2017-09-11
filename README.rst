@@ -18,6 +18,8 @@ where α is the Gardner's α and r is the diameter of the disc (cm). See equatio
 Install
 ---------------
 
+Python 2 or 3 is required. Install Python at https://www.python.org/ . After that, install discfit by running
+
 .. code-block:: bash
 
  pip install discfit
