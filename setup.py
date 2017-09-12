@@ -11,7 +11,7 @@ with open(path.join(here, 'README.rst'), encoding='utf-8') as f:
 
 setup(
     name='discfit',
-    version='0.0.1',
+    version='0.1.0',
     description='Disc permeameter fitting program',
     long_description=long_description,
     url='https://github.com/sekika/discfit',
@@ -32,6 +32,6 @@ setup(
     install_requires=['numpy', 'scipy'],
     entry_points={  
         'console_scripts':  
-            'discfit = discfit.discfit:main'  
+            'discfit = discfit.main:main'  
     },
 )
