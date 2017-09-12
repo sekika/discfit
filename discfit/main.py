@@ -1,10 +1,10 @@
 import sys
-from discfit.calc import steadystate, wooding
+from .calc import (steadystate, wooding)
 
 def main(argv=sys.argv[1:]):    
     
     if len(sys.argv) < 4:
-        print ('Usage:',sys.argv[0],'Filename dd dp')
+        print ('Usage: discfit Filename dd dp')
         sys.exit()
     csvfile = sys.argv[1] # Filename of csv file
     dd = float(sys.argv[2]) # diameter of the disc
