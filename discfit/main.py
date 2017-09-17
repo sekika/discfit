@@ -33,7 +33,7 @@ def main(argv=sys.argv[1:]):
         for yi in y:
             q.append(yi * dp * dp / dd / dd)
         ks, alpha, r2 = wooding(x, q, dd) # Calculate Ks and alpha
-        print ('Ks = {0} cm'.format(ks))
+        print ('Ks = {0} cm/s'.format(ks))
         print ('Alpha = {0:.4f} /cm'.format(alpha))
         if len(x) > 2:
             print ('R2 = {0:.3f}'.format(r2))
